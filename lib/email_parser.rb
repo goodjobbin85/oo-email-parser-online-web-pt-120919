@@ -13,7 +13,7 @@ class EmailAddressParser
   def parse 
     new_email_set = []
     @set_of_emails.split(/\s+|\,/).each do |email| 
-      new_email_set << email if !new_email_set.include?(email)
+      new_email_set << email unless new_email_set.include(email)
     end 
   end
 end
