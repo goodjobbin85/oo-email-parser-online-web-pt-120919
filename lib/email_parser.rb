@@ -17,5 +17,6 @@ class EmailAddressParser
         new_email_set << email 
       end
     end 
+    new_email_set
   end
 end
