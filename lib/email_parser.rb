@@ -11,6 +11,9 @@ class EmailAddressParser
   end
   
   def parse 
-    @set_of_emails.split
+    new_email_set = []
+    @set_of_emails.split.each do |email| 
+      new_email_set << email 
+    end 
   end
 end
