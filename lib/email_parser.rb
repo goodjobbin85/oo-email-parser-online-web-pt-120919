@@ -14,6 +14,7 @@ class EmailAddressParser
     new_email_set = []
     @set_of_emails.split(/\s|\,/).each do |email| 
       if !new_email_set.include?(email)
+        puts email
         new_email_set << email 
       end
     end 
