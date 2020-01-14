@@ -12,7 +12,7 @@ class EmailAddressParser
   
   def parse 
     new_email_set = []
-    @set_of_emails.split.each do |email| 
+    @set_of_emails.split(/\s | \,/).each do |email| 
       new_email_set << email 
     end 
   end
